@@ -1,0 +1,25 @@
+﻿<Window x:Class="LSS_assist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LSS_assist"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="467.087" Width="319.784" Loaded="Window_Loaded" Focusable="False">
+    <Grid>
+        <Viewbox>
+            <StackPanel>
+                <!--<CheckBox x:Name="checkBoxEarn" Margin="5" Content="Enable &quot;Earn money&quot; Timer" Checked="checkBox_Checked" Unchecked="checkBox_Checked"/>
+                <CheckBox x:Name="checkBoxGive" Margin="5" Content="Enable &quot;Give us your money&quot; Timer" Checked="checkBox_Checked" Unchecked="checkBox_Checked"/>-->
+                <Label x:Name="label" Content="(Window Handle)" Margin="5" />
+                <Button Content="Send Enter" Margin="5"  Click="buttonSendEnter_Click" />
+                <Button Content="Send Tab" Margin="5"  Click="buttonSendTab_Click" />
+                <RadioButton x:Name="radioButtonEarn" Margin="5" Content="Earn money" GroupName="LSS"/>
+                <RadioButton x:Name="radioButtonGive" Margin="5" Content="Give us your money" GroupName="LSS"/>
+                <RadioButton x:Name="radioButtonNone" Margin="5" Content="Do nothing" GroupName="LSS" IsChecked="True" Checked="radioButtonNone_Checked" Unchecked="radioButtonNone_Checked"/>
+                <ProgressBar x:Name="progressBar1" Height="20" Margin="5" MinWidth="100"/>
+            </StackPanel>
+        </Viewbox>
+
+    </Grid>
+</Window>
